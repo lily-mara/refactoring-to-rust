@@ -1,0 +1,73 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+import glob
+import subprocess
+
+"""
+This script is used to check-compile all of the examples in this repository.
+It requires no arguments to run.
+"""
+
+BASE = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+
+errors = 0
+
+
+def find(pattern):
+    return glob.glob(f'{BASE}/**/{pattern}', recursive=True)
+
+
+def run(*args):
+    return subprocess.run(
+        args,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    ).returncode
+
+
+for cargo in find('Cargo.toml'):
+    rc = run(
+        'cargo',
+        'check',
+        f'--manifest-path={cargo}',
+    )
+    final_segment = os.path.dirname(cargo)
+
+    if 'NO_COMPILE' in final_segment:
+        if rc != 101:
+            print(f'Expected {cargo} to fail to build')
+            errors += 1
+    else:
+        if rc != 0:
+            print(f'Expected {cargo} to build')
+            errors += 1
+
+
+for py in find('*.py'):
+    rc = run(
+        'python',
+        '-m',
+        'py_compile',
+        py,
+    )
+    if rc != 0:
+        print(f'Expected {py} to build')
+        errors += 1
+
+for java in find('*.java'):
+    rc = run(
+        'javac',
+        java,
+    )
+    if rc != 0:
+        print(f'Expected {java} to build')
+        errors += 1
+
+
+if errors == 0:
+    print('Ok all')
+else:
+    print(f'Encountered {errors} errors.')
+    sys.exit(1)

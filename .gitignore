@@ -1,0 +1,7 @@
+.vscode
+**/target/
+**/Cargo.lock
+*.class
+*.pyc
+__pycache__
+*.zip
