@@ -32,7 +32,7 @@ pub extern "C" fn solve(line: *const c_char, solution: *mut c_int) -> c_int {
   }
 }
 
-enum Error {
+pub enum Error {
   InvalidNumber,
   PopFromEmptyStack,
 }
@@ -70,7 +70,7 @@ impl RpnStack {
   }
 }
 
-fn evaluate(problem: &str) -> Result<i32, Error> {
+pub fn evaluate(problem: &str) -> Result<i32, Error> {
   let mut stack = RpnStack::new();
 
   for term in problem.trim().split(' ') {

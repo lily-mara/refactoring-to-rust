@@ -1,0 +1,16 @@
+[package]
+name = "chapter-04-listing-15"
+version = "0.1.0"
+authors = ["Nate Mara <natemara@fastmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+calculate = { path = "../listing_14_calculate", package = "chapter-04-listing-14" }
+
+[build-dependencies]
+bindgen = "0.56.0"
