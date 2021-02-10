@@ -1,5 +1,5 @@
 [package]
-name = "listing_01"
+name = "chapter-03-listing-01"
 version = "0.1.0"
 authors = ["Nate Mara <natemara@fastmail.com>"]
 edition = "2018"

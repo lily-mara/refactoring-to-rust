@@ -1,5 +1,5 @@
 [package]
-name = "listing_21_fizz_buzz_basic"
+name = "chapter-02-listing-21"
 version = "0.1.0"
 authors = ["Nate Mara <natemara@fastmail.com>"]
 edition = "2018"
