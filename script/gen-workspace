@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+
+import os.path
+import glob
+
+with open('Cargo.toml', 'w') as f:
+    print("""# Auto generated with `./script/gen-workspace`
+
+[workspace]
+members = [""", file=f)
+
+    chapter = 'chapter-01'
+
+    for path in sorted(list(glob.glob('chapter-*/**/Cargo.toml'))):
+        new_chapter = path.split('/')[0]
+        if new_chapter != chapter:
+            print('', file=f)
+            chapter = new_chapter
+
+        dirname = os.path.dirname(path)
+
+        line_start = '    '
+
+        if dirname.endswith('NO_COMPILE'):
+            line_start = '#   '
+
+        print(f'{line_start}"{dirname}",', file=f)
+
+    print(']', file=f)
