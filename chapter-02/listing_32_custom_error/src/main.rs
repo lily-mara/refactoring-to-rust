@@ -1,4 +1,4 @@
-enum FizzBuzzResult {
+enum FizzBuzzValue {
   Fizz,
   Buzz,
   FizzBuzz,
@@ -13,14 +13,12 @@ fn main() {
   for i in 1..101 {
     match print_fizzbuzz(i) {
       Ok(()) => {}
-      Err(e) => {
-        match e {
-          Error::GotNegative => {
-            eprintln!("Error: Fizz Buzz only supports positive numbers!");
-            return;
-          }
+      Err(e) => match e {
+        Error::GotNegative => {
+          eprintln!("Error: Fizz Buzz only supports positive numbers!");
+          return;
         }
-      }
+      },
     }
   }
 }
@@ -29,38 +27,36 @@ fn print_fizzbuzz(x: i32) -> Result<(), Error> {
   match fizzbuzz(x) {
     Ok(result) => {
       match result {
-        FizzBuzzResult::FizzBuzz => {
+        FizzBuzzValue::FizzBuzz => {
           println!("FizzBuzz");
         }
-        FizzBuzzResult::Fizz => {
+        FizzBuzzValue::Fizz => {
           println!("Fizz");
         }
-        FizzBuzzResult::Buzz => {
+        FizzBuzzValue::Buzz => {
           println!("Buzz");
         }
-        FizzBuzzResult::NotDivisible(num) => {
+        FizzBuzzValue::NotDivisible(num) => {
           println!("{}", num);
         }
       }
 
       Ok(())
     }
-    Err(e) => {
-      Err(e)
-    }
+    Err(e) => Err(e),
   }
 }
 
-fn fizzbuzz(x: i32) -> Result<FizzBuzzResult, Error> {
+fn fizzbuzz(x: i32) -> Result<FizzBuzzValue, Error> {
   if x < 0 {
     Err(Error::GotNegative)
   } else if x % 3 == 0 && x % 5 == 0 {
-    Ok(FizzBuzzResult::FizzBuzz)
+    Ok(FizzBuzzValue::FizzBuzz)
   } else if x % 3 == 0 {
-    Ok(FizzBuzzResult::Fizz)
+    Ok(FizzBuzzValue::Fizz)
   } else if x % 5 == 0 {
-    Ok(FizzBuzzResult::Buzz)
+    Ok(FizzBuzzValue::Buzz)
   } else {
-    Ok(FizzBuzzResult::NotDivisible(x))
+    Ok(FizzBuzzValue::NotDivisible(x))
   }
 }

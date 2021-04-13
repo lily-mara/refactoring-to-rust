@@ -1,4 +1,4 @@
-enum FizzBuzzResult {
+enum FizzBuzzValue {
   Fizz,
   Buzz,
   FizzBuzz,
@@ -13,29 +13,30 @@ fn main() {
 
 fn print_fizzbuzz(x: i32) {
   match fizzbuzz(x) {
-    FizzBuzzResult::FizzBuzz => {
+    FizzBuzzValue::FizzBuzz => {
       println!("FizzBuzz");
     }
-    FizzBuzzResult::Fizz => {
+    FizzBuzzValue::Fizz => {
       println!("Fizz");
     }
-    FizzBuzzResult::Buzz => {
+    FizzBuzzValue::Buzz => {
       println!("Buzz");
     }
-    FizzBuzzResult::NotDivisible(num) => { // <2>
+    FizzBuzzValue::NotDivisible(num) => {
+      // <2>
       println!("{}", num);
     }
   }
 }
 
-fn fizzbuzz(x: i32) -> FizzBuzzResult {
+fn fizzbuzz(x: i32) -> FizzBuzzValue {
   if x % 3 == 0 && x % 5 == 0 {
-    FizzBuzzResult::FizzBuzz
+    FizzBuzzValue::FizzBuzz
   } else if x % 3 == 0 {
-    FizzBuzzResult::Fizz
+    FizzBuzzValue::Fizz
   } else if x % 5 == 0 {
-    FizzBuzzResult::Buzz
+    FizzBuzzValue::Buzz
   } else {
-    FizzBuzzResult::NotDivisible(x) // <3>
+    FizzBuzzValue::NotDivisible(x) // <3>
   }
 }
