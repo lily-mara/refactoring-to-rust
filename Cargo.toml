@@ -25,8 +25,9 @@ members = [
     "chapter-02/listing_30_unit_return_explicit",
     "chapter-02/listing_32_custom_error",
     "chapter-02/listing_34_question_mark",
-    "chapter-02/listing_35_err_panic",
-    "chapter-02/listing_36_err_unwrap",
+    "chapter-02/listing_35_username_validation",
+    "chapter-02/listing_36_err_panic",
+    "chapter-02/listing_37_err_unwrap",
 
     # The non-compiling examples from Chapter 2 - to make the workspace build,
     # these can be commented out.
