@@ -2,18 +2,19 @@
 
 [workspace]
 members = [
-    # Chapter 1
     "chapter-01/listing_02_rust_csv",
     "chapter-01/listing_04_rust_map",
 
-    # Chapter 2
     "chapter-02/listing_01_hello_world",
     "chapter-02/listing_02_artwork",
     "chapter-02/listing_03_admiration",
     "chapter-02/listing_04_two_arts",
+#   "chapter-02/listing_05_double_admiration_NO_COMPILE",
     "chapter-02/listing_09_double_admiration_ref",
     "chapter-02/listing_10_mutability",
     "chapter-02/listing_11_view_counter",
+#   "chapter-02/listing_12_use_after_move_NO_COMPILE",
+#   "chapter-02/listing_13_hanging_ref_NO_COMPILE",
     "chapter-02/listing_16_large_string_rs",
     "chapter-02/listing_17_large_string_prealloc",
     "chapter-02/listing_18_string_to_ref",
@@ -22,6 +23,7 @@ members = [
     "chapter-02/listing_24_fizz_buzz_enum_basic",
     "chapter-02/listing_25_fizz_buzz_enum",
     "chapter-02/listing_27_fizz_buzz_result",
+#   "chapter-02/listing_29_unit_type_mismatch_NO_COMPILE",
     "chapter-02/listing_30_unit_return_explicit",
     "chapter-02/listing_32_custom_error",
     "chapter-02/listing_34_question_mark",
@@ -29,14 +31,6 @@ members = [
     "chapter-02/listing_36_err_panic",
     "chapter-02/listing_37_err_unwrap",
 
-    # The non-compiling examples from Chapter 2 - to make the workspace build,
-    # these can be commented out.
-    "chapter-02/listing_05_double_admiration_NO_COMPILE",
-    "chapter-02/listing_12_use_after_move_NO_COMPILE",
-    "chapter-02/listing_13_hanging_ref_NO_COMPILE",
-    "chapter-02/listing_29_unit_type_mismatch_NO_COMPILE",
-
-    # Chapter 3
     "chapter-03/listing_01_unsafe_iteration",
     "chapter-03/listing_04_beginning_ffi",
     "chapter-03/listing_06_most_basic_ffi",
@@ -44,7 +38,6 @@ members = [
     "chapter-03/listing_10_hello_world_display",
     "chapter-03/listing_13_full_calculator",
 
-    # Chapter 4
     "chapter-04/listing_01_module_starter",
     "chapter-04/listing_02_build_script_hello",
     "chapter-04/listing_03_build_script_language",
