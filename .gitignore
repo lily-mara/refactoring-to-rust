@@ -5,3 +5,5 @@
 *.pyc
 __pycache__
 *.zip
+nginx-1.19.3.tar.gz
+nginx-1.19.3

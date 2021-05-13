@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -xe
+
+rm -fr nginx-1.19.3.tar.gz nginx-1.19.3
+
+mkdir -p ngx-run/logs
+
+curl -L -o nginx-1.19.3.tar.gz https://nginx.org/download/nginx-1.19.3.tar.gz
+tar -xzf nginx-1.19.3.tar.gz
+
+pushd nginx-1.19.3
+
+./configure --add-dynamic-module=../module
+
+make -j16 build modules
+
+popd
+
+./nginx-1.19.3/objs/nginx -c nginx.conf -p ngx-run

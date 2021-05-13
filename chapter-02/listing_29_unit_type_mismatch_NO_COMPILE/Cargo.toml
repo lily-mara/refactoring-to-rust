@@ -1,5 +1,5 @@
 [package]
-name = "listing_29_unit_type_mismatch"
+name = "chapter-02-listing-29"
 version = "0.1.0"
 authors = ["Nate Mara <natemara@fastmail.com>"]
 edition = "2018"

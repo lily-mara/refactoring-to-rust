@@ -1,0 +1,25 @@
+#!/bin/bash
+
+set -xe
+
+rm -fr nginx-1.19.3.tar.gz nginx-1.19.3 /tmp/libngx_http_calculator_rs.so
+
+mkdir -p ngx-run/logs
+
+curl -L -o nginx-1.19.3.tar.gz https://nginx.org/download/nginx-1.19.3.tar.gz
+tar -xzf nginx-1.19.3.tar.gz
+
+pushd nginx-1.19.3
+./configure --add-dynamic-module=../module
+popd
+
+cargo build
+
+mv ../../target/debug/libchapter_04_listing_08.so /tmp/libngx_http_calculator_rs.so
+
+pushd nginx-1.19.3
+make -j16 build modules
+popd
+
+
+./nginx-1.19.3/objs/nginx -c nginx.conf -p ngx-run

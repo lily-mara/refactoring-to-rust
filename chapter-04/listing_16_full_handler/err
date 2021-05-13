@@ -1,0 +1,1054 @@
+warning: The package `chapter_04_listing_09` provides no linkable target. The compiler might raise an error while compiling `chapter_04_listing_10`. Consider adding 'dylib' or 'rlib' to key `crate-type` in `chapter_04_listing_09`'s Cargo.toml. This warning might turn into a hard error in the future.
+   Compiling chapter-04-listing-10 v0.1.0 (/home/nate/projects/github.com/natemara/refactoring-to-rust/chapter-04/listing_10_evaluate_expression)
+error[E0433]: failed to resolve: use of undeclared type or module `calculate`
+  --> chapter-04/listing_10_evaluate_expression/src/lib.rs:31:9
+   |
+31 |   match calculate::evaluate(body) {
+   |         ^^^^^^^^^ use of undeclared type or module `calculate`
+
+warning: type `__u_char` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:132:10
+    |
+132 | pub type __u_char = ::std::os::raw::c_uchar;
+    |          ^^^^^^^^ help: convert the identifier to upper camel case: `UChar`
+    |
+    = note: `#[warn(non_camel_case_types)]` on by default
+
+warning: type `__u_short` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:133:10
+    |
+133 | pub type __u_short = ::std::os::raw::c_ushort;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `UShort`
+
+warning: type `__uint8_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:134:10
+    |
+134 | pub type __uint8_t = ::std::os::raw::c_uchar;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `Uint8T`
+
+warning: type `__uint16_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:135:10
+    |
+135 | pub type __uint16_t = ::std::os::raw::c_ushort;
+    |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `Uint16T`
+
+warning: type `__uint32_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:136:10
+    |
+136 | pub type __uint32_t = ::std::os::raw::c_uint;
+    |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `Uint32T`
+
+warning: type `__dev_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:137:10
+    |
+137 | pub type __dev_t = ::std::os::raw::c_ulong;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `DevT`
+
+warning: type `__uid_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:138:10
+    |
+138 | pub type __uid_t = ::std::os::raw::c_uint;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `UidT`
+
+warning: type `__gid_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:139:10
+    |
+139 | pub type __gid_t = ::std::os::raw::c_uint;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `GidT`
+
+warning: type `__ino_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:140:10
+    |
+140 | pub type __ino_t = ::std::os::raw::c_ulong;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `InoT`
+
+warning: type `__ino64_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:141:10
+    |
+141 | pub type __ino64_t = ::std::os::raw::c_ulong;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `Ino64T`
+
+warning: type `__mode_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:142:10
+    |
+142 | pub type __mode_t = ::std::os::raw::c_uint;
+    |          ^^^^^^^^ help: convert the identifier to upper camel case: `ModeT`
+
+warning: type `__nlink_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:143:10
+    |
+143 | pub type __nlink_t = ::std::os::raw::c_ulong;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `NlinkT`
+
+warning: type `__off_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:144:10
+    |
+144 | pub type __off_t = ::std::os::raw::c_long;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `OffT`
+
+warning: type `__off64_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:145:10
+    |
+145 | pub type __off64_t = ::std::os::raw::c_long;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `Off64T`
+
+warning: type `__pid_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:146:10
+    |
+146 | pub type __pid_t = ::std::os::raw::c_int;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `PidT`
+
+warning: type `__time_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:147:10
+    |
+147 | pub type __time_t = ::std::os::raw::c_long;
+    |          ^^^^^^^^ help: convert the identifier to upper camel case: `TimeT`
+
+warning: type `__blksize_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:148:10
+    |
+148 | pub type __blksize_t = ::std::os::raw::c_long;
+    |          ^^^^^^^^^^^ help: convert the identifier to upper camel case: `BlksizeT`
+
+warning: type `__blkcnt_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:149:10
+    |
+149 | pub type __blkcnt_t = ::std::os::raw::c_long;
+    |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `BlkcntT`
+
+warning: type `__ssize_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:150:10
+    |
+150 | pub type __ssize_t = ::std::os::raw::c_long;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `SsizeT`
+
+warning: type `__syscall_slong_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:151:10
+    |
+151 | pub type __syscall_slong_t = ::std::os::raw::c_long;
+    |          ^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `SyscallSlongT`
+
+warning: type `__intptr_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:152:10
+    |
+152 | pub type __intptr_t = ::std::os::raw::c_long;
+    |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `IntptrT`
+
+warning: type `__socklen_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:153:10
+    |
+153 | pub type __socklen_t = ::std::os::raw::c_uint;
+    |          ^^^^^^^^^^^ help: convert the identifier to upper camel case: `SocklenT`
+
+warning: type `__sig_atomic_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:154:10
+    |
+154 | pub type __sig_atomic_t = ::std::os::raw::c_int;
+    |          ^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `SigAtomicT`
+
+warning: type `u_char` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:155:10
+    |
+155 | pub type u_char = __u_char;
+    |          ^^^^^^ help: convert the identifier to upper camel case: `UChar`
+
+warning: type `u_short` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:156:10
+    |
+156 | pub type u_short = __u_short;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `UShort`
+
+warning: type `ino_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:157:10
+    |
+157 | pub type ino_t = __ino64_t;
+    |          ^^^^^ help: convert the identifier to upper camel case: `InoT`
+
+warning: type `gid_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:158:10
+    |
+158 | pub type gid_t = __gid_t;
+    |          ^^^^^ help: convert the identifier to upper camel case: `GidT`
+
+warning: type `uid_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:159:10
+    |
+159 | pub type uid_t = __uid_t;
+    |          ^^^^^ help: convert the identifier to upper camel case: `UidT`
+
+warning: type `off_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:160:10
+    |
+160 | pub type off_t = __off64_t;
+    |          ^^^^^ help: convert the identifier to upper camel case: `OffT`
+
+warning: type `pid_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:161:10
+    |
+161 | pub type pid_t = __pid_t;
+    |          ^^^^^ help: convert the identifier to upper camel case: `PidT`
+
+warning: type `ssize_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:162:10
+    |
+162 | pub type ssize_t = __ssize_t;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `SsizeT`
+
+warning: type `time_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:163:10
+    |
+163 | pub type time_t = __time_t;
+    |          ^^^^^^ help: convert the identifier to upper camel case: `TimeT`
+
+warning: type `size_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:164:10
+    |
+164 | pub type size_t = ::std::os::raw::c_ulong;
+    |          ^^^^^^ help: convert the identifier to upper camel case: `SizeT`
+
+warning: type `socklen_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:204:10
+    |
+204 | pub type socklen_t = __socklen_t;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `SocklenT`
+
+warning: type `va_list` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:205:10
+    |
+205 | pub type va_list = __builtin_va_list;
+    |          ^^^^^^^ help: convert the identifier to upper camel case: `VaList`
+
+warning: type `sig_atomic_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:206:10
+    |
+206 | pub type sig_atomic_t = __sig_atomic_t;
+    |          ^^^^^^^^^^^^ help: convert the identifier to upper camel case: `SigAtomicT`
+
+warning: type `__size_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:285:10
+    |
+285 | pub type __size_t = ::std::os::raw::c_ulong;
+    |          ^^^^^^^^ help: convert the identifier to upper camel case: `SizeT`
+
+warning: type `__cpu_mask` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:637:10
+    |
+637 | pub type __cpu_mask = ::std::os::raw::c_ulong;
+    |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `CpuMask`
+
+warning: type `sa_family_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:666:10
+    |
+666 | pub type sa_family_t = ::std::os::raw::c_ushort;
+    |          ^^^^^^^^^^^ help: convert the identifier to upper camel case: `SaFamilyT`
+
+warning: type `in_addr_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:706:10
+    |
+706 | pub type in_addr_t = u32;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `InAddrT`
+
+warning: type `in_port_t` should have an upper camel case name
+   --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:735:10
+    |
+735 | pub type in_port_t = u16;
+    |          ^^^^^^^^^ help: convert the identifier to upper camel case: `InPortT`
+
+warning: type `ngx_int_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1171:10
+     |
+1171 | pub type ngx_int_t = isize;
+     |          ^^^^^^^^^ help: convert the identifier to upper camel case: `NgxIntT`
+
+warning: type `ngx_uint_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1172:10
+     |
+1172 | pub type ngx_uint_t = usize;
+     |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxUintT`
+
+warning: type `ngx_flag_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1173:10
+     |
+1173 | pub type ngx_flag_t = isize;
+     |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxFlagT`
+
+warning: type `ngx_module_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1174:10
+     |
+1174 | pub type ngx_module_t = ngx_module_s;
+     |          ^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxModuleT`
+
+warning: type `ngx_conf_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1175:10
+     |
+1175 | pub type ngx_conf_t = ngx_conf_s;
+     |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxConfT`
+
+warning: type `ngx_cycle_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1176:10
+     |
+1176 | pub type ngx_cycle_t = ngx_cycle_s;
+     |          ^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxCycleT`
+
+warning: type `ngx_pool_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1177:10
+     |
+1177 | pub type ngx_pool_t = ngx_pool_s;
+     |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxPoolT`
+
+warning: type `ngx_chain_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1178:10
+     |
+1178 | pub type ngx_chain_t = ngx_chain_s;
+     |          ^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxChainT`
+
+warning: type `ngx_log_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1179:10
+     |
+1179 | pub type ngx_log_t = ngx_log_s;
+     |          ^^^^^^^^^ help: convert the identifier to upper camel case: `NgxLogT`
+
+warning: type `ngx_open_file_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1180:10
+     |
+1180 | pub type ngx_open_file_t = ngx_open_file_s;
+     |          ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxOpenFileT`
+
+warning: type `ngx_command_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1181:10
+     |
+1181 | pub type ngx_command_t = ngx_command_s;
+     |          ^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxCommandT`
+
+warning: type `ngx_file_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1182:10
+     |
+1182 | pub type ngx_file_t = ngx_file_s;
+     |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxFileT`
+
+warning: type `ngx_event_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1183:10
+     |
+1183 | pub type ngx_event_t = ngx_event_s;
+     |          ^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxEventT`
+
+warning: type `ngx_event_aio_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1189:10
+     |
+1189 | pub type ngx_event_aio_t = ngx_event_aio_s;
+     |          ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxEventAioT`
+
+warning: type `ngx_connection_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1190:10
+     |
+1190 | pub type ngx_connection_t = ngx_connection_s;
+     |          ^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxConnectionT`
+
+warning: type `ngx_thread_task_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1196:10
+     |
+1196 | pub type ngx_thread_task_t = ngx_thread_task_s;
+     |          ^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxThreadTaskT`
+
+warning: type `ngx_ssl_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1202:10
+     |
+1202 | pub type ngx_ssl_t = ngx_ssl_s;
+     |          ^^^^^^^^^ help: convert the identifier to upper camel case: `NgxSslT`
+
+warning: type `ngx_proxy_protocol_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1203:10
+     |
+1203 | pub type ngx_proxy_protocol_t = ngx_proxy_protocol_s;
+     |          ^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxProxyProtocolT`
+
+warning: type `ngx_ssl_connection_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1209:10
+     |
+1209 | pub type ngx_ssl_connection_t = ngx_ssl_connection_s;
+     |          ^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxSslConnectionT`
+
+warning: type `ngx_udp_connection_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1215:10
+     |
+1215 | pub type ngx_udp_connection_t = ngx_udp_connection_s;
+     |          ^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxUdpConnectionT`
+
+warning: type `ngx_event_handler_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1216:10
+     |
+1216 | pub type ngx_event_handler_pt = ::std::option::Option<unsafe extern "C" fn(ev: *mut ngx_event_t)>;
+     |          ^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxEventHandlerPt`
+
+warning: type `ngx_connection_handler_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1217:10
+     |
+1217 | pub type ngx_connection_handler_pt =
+     |          ^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxConnectionHandlerPt`
+
+warning: type `ngx_err_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1219:10
+     |
+1219 | pub type ngx_err_t = ::std::os::raw::c_int;
+     |          ^^^^^^^^^ help: convert the identifier to upper camel case: `NgxErrT`
+
+warning: type `ngx_atomic_int_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1226:10
+     |
+1226 | pub type ngx_atomic_int_t = ::std::os::raw::c_long;
+     |          ^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxAtomicIntT`
+
+warning: type `ngx_atomic_uint_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1227:10
+     |
+1227 | pub type ngx_atomic_uint_t = ::std::os::raw::c_ulong;
+     |          ^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxAtomicUintT`
+
+warning: type `ngx_atomic_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1228:10
+     |
+1228 | pub type ngx_atomic_t = ngx_atomic_uint_t;
+     |          ^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxAtomicT`
+
+warning: type `ngx_rbtree_key_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1232:10
+     |
+1232 | pub type ngx_rbtree_key_t = ngx_uint_t;
+     |          ^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxRbtreeKeyT`
+
+warning: type `ngx_rbtree_key_int_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1233:10
+     |
+1233 | pub type ngx_rbtree_key_int_t = ngx_int_t;
+     |          ^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxRbtreeKeyIntT`
+
+warning: type `ngx_rbtree_node_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1234:10
+     |
+1234 | pub type ngx_rbtree_node_t = ngx_rbtree_node_s;
+     |          ^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxRbtreeNodeT`
+
+warning: type `ngx_rbtree_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1318:10
+     |
+1318 | pub type ngx_rbtree_t = ngx_rbtree_s;
+     |          ^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxRbtreeT`
+
+warning: type `ngx_rbtree_insert_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1319:10
+     |
+1319 | pub type ngx_rbtree_insert_pt = ::std::option::Option<
+     |          ^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxRbtreeInsertPt`
+
+warning: type `ngx_msec_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1402:10
+     |
+1402 | pub type ngx_msec_t = ngx_rbtree_key_t;
+     |          ^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxMsecT`
+
+warning: type `ngx_msec_int_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1403:10
+     |
+1403 | pub type ngx_msec_int_t = ngx_rbtree_key_int_t;
+     |          ^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxMsecIntT`
+
+warning: type `ngx_tm_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1404:10
+     |
+1404 | pub type ngx_tm_t = tm;
+     |          ^^^^^^^^ help: convert the identifier to upper camel case: `NgxTmT`
+
+warning: type `ngx_socket_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1417:10
+     |
+1417 | pub type ngx_socket_t = ::std::os::raw::c_int;
+     |          ^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxSocketT`
+
+warning: type `ngx_fd_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1845:10
+     |
+1845 | pub type ngx_fd_t = ::std::os::raw::c_int;
+     |          ^^^^^^^^ help: convert the identifier to upper camel case: `NgxFdT`
+
+warning: type `ngx_file_info_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1846:10
+     |
+1846 | pub type ngx_file_info_t = stat;
+     |          ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxFileInfoT`
+
+warning: type `ngx_file_uniq_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:1847:10
+     |
+1847 | pub type ngx_file_uniq_t = ino_t;
+     |          ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxFileUniqT`
+
+warning: type `ngx_cpuset_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:2242:10
+     |
+2242 | pub type ngx_cpuset_t = cpu_set_t;
+     |          ^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxCpusetT`
+
+warning: type `ngx_pid_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:2252:10
+     |
+2252 | pub type ngx_pid_t = pid_t;
+     |          ^^^^^^^^^ help: convert the identifier to upper camel case: `NgxPidT`
+
+warning: type `ngx_spawn_proc_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:2253:10
+     |
+2253 | pub type ngx_spawn_proc_pt = ::std::option::Option<
+     |          ^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxSpawnProcPt`
+
+warning: type `ngx_uid_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:2536:10
+     |
+2536 | pub type ngx_uid_t = uid_t;
+     |          ^^^^^^^^^ help: convert the identifier to upper camel case: `NgxUidT`
+
+warning: type `ngx_gid_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:2537:10
+     |
+2537 | pub type ngx_gid_t = gid_t;
+     |          ^^^^^^^^^ help: convert the identifier to upper camel case: `NgxGidT`
+
+warning: type `ngx_log_handler_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:2561:10
+     |
+2561 | pub type ngx_log_handler_pt = ::std::option::Option<
+     |          ^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxLogHandlerPt`
+
+warning: type `ngx_log_writer_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:2564:10
+     |
+2564 | pub type ngx_log_writer_pt = ::std::option::Option<
+     |          ^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxLogWriterPt`
+
+warning: type `ngx_pool_cleanup_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:2758:10
+     |
+2758 | pub type ngx_pool_cleanup_pt =
+     |          ^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxPoolCleanupPt`
+
+warning: type `ngx_pool_cleanup_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:2760:10
+     |
+2760 | pub type ngx_pool_cleanup_t = ngx_pool_cleanup_s;
+     |          ^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxPoolCleanupT`
+
+warning: type `ngx_pool_large_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:2811:10
+     |
+2811 | pub type ngx_pool_large_t = ngx_pool_large_s;
+     |          ^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxPoolLargeT`
+
+warning: type `ngx_buf_tag_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:3096:10
+     |
+3096 | pub type ngx_buf_tag_t = *mut ::std::os::raw::c_void;
+     |          ^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxBufTagT`
+
+warning: type `ngx_buf_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:3097:10
+     |
+3097 | pub type ngx_buf_t = ngx_buf_s;
+     |          ^^^^^^^^^ help: convert the identifier to upper camel case: `NgxBufT`
+
+warning: type `ngx_output_chain_ctx_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:3489:10
+     |
+3489 | pub type ngx_output_chain_ctx_t = ngx_output_chain_ctx_s;
+     |          ^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxOutputChainCtxT`
+
+warning: type `ngx_output_chain_filter_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:3490:10
+     |
+3490 | pub type ngx_output_chain_filter_pt = ::std::option::Option<
+     |          ^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxOutputChainFilterPt`
+
+warning: type `ngx_output_chain_aio_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:3493:10
+     |
+3493 | pub type ngx_output_chain_aio_pt = ::std::option::Option<
+     |          ^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxOutputChainAioPt`
+
+warning: type `ngx_queue_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:3868:10
+     |
+3868 | pub type ngx_queue_t = ngx_queue_s;
+     |          ^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxQueueT`
+
+warning: type `ngx_list_part_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:4003:10
+     |
+4003 | pub type ngx_list_part_t = ngx_list_part_s;
+     |          ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxListPartT`
+
+warning: type `ngx_hash_key_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:4310:10
+     |
+4310 | pub type ngx_hash_key_pt =
+     |          ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHashKeyPt`
+
+warning: type `ngx_path_manager_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:4838:10
+     |
+4838 | pub type ngx_path_manager_pt =
+     |          ^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxPathManagerPt`
+
+warning: type `ngx_path_purger_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:4840:10
+     |
+4840 | pub type ngx_path_purger_pt =
+     |          ^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxPathPurgerPt`
+
+warning: type `ngx_path_loader_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:4842:10
+     |
+4842 | pub type ngx_path_loader_pt =
+     |          ^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxPathLoaderPt`
+
+warning: type `ngx_tree_ctx_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:5345:10
+     |
+5345 | pub type ngx_tree_ctx_t = ngx_tree_ctx_s;
+     |          ^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxTreeCtxT`
+
+warning: type `ngx_tree_init_handler_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:5346:10
+     |
+5346 | pub type ngx_tree_init_handler_pt = ::std::option::Option<
+     |          ^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxTreeInitHandlerPt`
+
+warning: type `ngx_tree_handler_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:5352:10
+     |
+5352 | pub type ngx_tree_handler_pt = ::std::option::Option<
+     |          ^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxTreeHandlerPt`
+
+warning: type `pcre` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:5606:10
+     |
+5606 | pub type pcre = real_pcre;
+     |          ^^^^ help: convert the identifier to upper camel case: `Pcre`
+
+warning: type `ngx_radix_node_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:5923:10
+     |
+5923 | pub type ngx_radix_node_t = ngx_radix_node_s;
+     |          ^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxRadixNodeT`
+
+warning: type `ngx_slab_page_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:6332:10
+     |
+6332 | pub type ngx_slab_page_t = ngx_slab_page_s;
+     |          ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxSlabPageT`
+
+warning: type `ngx_shm_zone_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:7274:10
+     |
+7274 | pub type ngx_shm_zone_t = ngx_shm_zone_s;
+     |          ^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxShmZoneT`
+
+warning: type `ngx_shm_zone_init_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:7275:10
+     |
+7275 | pub type ngx_shm_zone_init_pt = ::std::option::Option<
+     |          ^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxShmZoneInitPt`
+
+warning: type `ngx_resolver_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:8080:10
+     |
+8080 | pub type ngx_resolver_t = ngx_resolver_s;
+     |          ^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxResolverT`
+
+warning: type `ngx_resolver_ctx_t` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:8209:10
+     |
+8209 | pub type ngx_resolver_ctx_t = ngx_resolver_ctx_s;
+     |          ^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxResolverCtxT`
+
+warning: type `ngx_resolver_handler_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:8210:10
+     |
+8210 | pub type ngx_resolver_handler_pt =
+     |          ^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxResolverHandlerPt`
+
+warning: type `ngx_conf_handler_pt` should have an upper camel case name
+    --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:9870:10
+     |
+9870 | pub type ngx_conf_handler_pt = ::std::option::Option<
+     |          ^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxConfHandlerPt`
+
+warning: type `ngx_conf_post_handler_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:10026:10
+      |
+10026 | pub type ngx_conf_post_handler_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxConfPostHandlerPt`
+
+warning: type `ngx_cached_open_file_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:11099:10
+      |
+11099 | pub type ngx_cached_open_file_t = ngx_cached_open_file_s;
+      |          ^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxCachedOpenFileT`
+
+warning: type `ngx_recv_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:11679:10
+      |
+11679 | pub type ngx_recv_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxRecvPt`
+
+warning: type `ngx_recv_chain_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:11682:10
+      |
+11682 | pub type ngx_recv_chain_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxRecvChainPt`
+
+warning: type `ngx_send_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:11685:10
+      |
+11685 | pub type ngx_send_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxSendPt`
+
+warning: type `ngx_send_chain_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:11688:10
+      |
+11688 | pub type ngx_send_chain_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxSendChainPt`
+
+warning: type `ngx_listening_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:11949:10
+      |
+11949 | pub type ngx_listening_t = ngx_listening_s;
+      |          ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxListeningT`
+
+warning: type `ngx_connection_log_error_e` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:12551:10
+      |
+12551 | pub type ngx_connection_log_error_e = ::std::os::raw::c_uint;
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxConnectionLogErrorE`
+
+warning: type `ngx_connection_tcp_nodelay_e` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:12555:10
+      |
+12555 | pub type ngx_connection_tcp_nodelay_e = ::std::os::raw::c_uint;
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxConnectionTcpNodelayE`
+
+warning: type `ngx_connection_tcp_nopush_e` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:12559:10
+      |
+12559 | pub type ngx_connection_tcp_nopush_e = ::std::os::raw::c_uint;
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxConnectionTcpNopushE`
+
+warning: type `ngx_http_request_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:13338:10
+      |
+13338 | pub type ngx_http_request_t = ngx_http_request_s;
+      |          ^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpRequestT`
+
+warning: type `ngx_http_upstream_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:13339:10
+      |
+13339 | pub type ngx_http_upstream_t = ngx_http_upstream_s;
+      |          ^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpUpstreamT`
+
+warning: type `ngx_http_cache_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:13340:10
+      |
+13340 | pub type ngx_http_cache_t = ngx_http_cache_s;
+      |          ^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpCacheT`
+
+warning: type `ngx_http_file_cache_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:13341:10
+      |
+13341 | pub type ngx_http_file_cache_t = ngx_http_file_cache_s;
+      |          ^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpFileCacheT`
+
+warning: type `ngx_http_log_ctx_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:13342:10
+      |
+13342 | pub type ngx_http_log_ctx_t = ngx_http_log_ctx_s;
+      |          ^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpLogCtxT`
+
+warning: type `ngx_http_chunked_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:13343:10
+      |
+13343 | pub type ngx_http_chunked_t = ngx_http_chunked_s;
+      |          ^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpChunkedT`
+
+warning: type `ngx_http_v2_stream_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:13349:10
+      |
+13349 | pub type ngx_http_v2_stream_t = ngx_http_v2_stream_s;
+      |          ^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpV2StreamT`
+
+warning: type `ngx_http_header_handler_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:13350:10
+      |
+13350 | pub type ngx_http_header_handler_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpHeaderHandlerPt`
+
+warning: type `ngx_http_log_handler_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:13357:10
+      |
+13357 | pub type ngx_http_log_handler_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpLogHandlerPt`
+
+warning: type `ngx_http_variable_value_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:13365:10
+      |
+13365 | pub type ngx_http_variable_value_t = ngx_variable_value_t;
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpVariableValueT`
+
+warning: type `ngx_http_variable_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:13366:10
+      |
+13366 | pub type ngx_http_variable_t = ngx_http_variable_s;
+      |          ^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpVariableT`
+
+warning: type `ngx_http_set_variable_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:13367:10
+      |
+13367 | pub type ngx_http_set_variable_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpSetVariablePt`
+
+warning: type `ngx_http_get_variable_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:13374:10
+      |
+13374 | pub type ngx_http_get_variable_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpGetVariablePt`
+
+warning: type `ngx_http_state_e` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:13940:10
+      |
+13940 | pub type ngx_http_state_e = ::std::os::raw::c_uint;
+      |          ^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpStateE`
+
+warning: type `ngx_http_client_body_handler_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:14914:10
+      |
+14914 | pub type ngx_http_client_body_handler_pt =
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpClientBodyHandlerPt`
+
+warning: type `ngx_http_addr_conf_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:15038:10
+      |
+15038 | pub type ngx_http_addr_conf_t = ngx_http_addr_conf_s;
+      |          ^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpAddrConfT`
+
+warning: type `ngx_http_cleanup_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:15154:10
+      |
+15154 | pub type ngx_http_cleanup_pt =
+      |          ^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpCleanupPt`
+
+warning: type `ngx_http_cleanup_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:15156:10
+      |
+15156 | pub type ngx_http_cleanup_t = ngx_http_cleanup_s;
+      |          ^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpCleanupT`
+
+warning: type `ngx_http_post_subrequest_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:15207:10
+      |
+15207 | pub type ngx_http_post_subrequest_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpPostSubrequestPt`
+
+warning: type `ngx_http_postponed_request_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:15255:10
+      |
+15255 | pub type ngx_http_postponed_request_t = ngx_http_postponed_request_s;
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpPostponedRequestT`
+
+warning: type `ngx_http_posted_request_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:15312:10
+      |
+15312 | pub type ngx_http_posted_request_t = ngx_http_posted_request_s;
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpPostedRequestT`
+
+warning: type `ngx_http_handler_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:15354:10
+      |
+15354 | pub type ngx_http_handler_pt =
+      |          ^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpHandlerPt`
+
+warning: type `ngx_http_event_handler_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:15356:10
+      |
+15356 | pub type ngx_http_event_handler_pt =
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpEventHandlerPt`
+
+warning: type `ngx_http_script_code_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:18115:10
+      |
+18115 | pub type ngx_http_script_code_pt =
+      |          ^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpScriptCodePt`
+
+warning: type `ngx_http_script_len_code_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:18117:10
+      |
+18117 | pub type ngx_http_script_len_code_pt =
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpScriptLenCodePt`
+
+warning: type `ngx_http_script_file_op_e` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:18757:10
+      |
+18757 | pub type ngx_http_script_file_op_e = ::std::os::raw::c_uint;
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpScriptFileOpE`
+
+warning: type `ngx_peer_connection_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:19982:10
+      |
+19982 | pub type ngx_peer_connection_t = ngx_peer_connection_s;
+      |          ^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxPeerConnectionT`
+
+warning: type `ngx_event_get_peer_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:19983:10
+      |
+19983 | pub type ngx_event_get_peer_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxEventGetPeerPt`
+
+warning: type `ngx_event_free_peer_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:19989:10
+      |
+19989 | pub type ngx_event_free_peer_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxEventFreePeerPt`
+
+warning: type `ngx_event_notify_peer_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:19996:10
+      |
+19996 | pub type ngx_event_notify_peer_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxEventNotifyPeerPt`
+
+warning: type `ngx_event_set_peer_session_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:20003:10
+      |
+20003 | pub type ngx_event_set_peer_session_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxEventSetPeerSessionPt`
+
+warning: type `ngx_event_save_peer_session_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:20009:10
+      |
+20009 | pub type ngx_event_save_peer_session_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxEventSavePeerSessionPt`
+
+warning: type `ngx_event_pipe_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:20287:10
+      |
+20287 | pub type ngx_event_pipe_t = ngx_event_pipe_s;
+      |          ^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxEventPipeT`
+
+warning: type `ngx_event_pipe_input_filter_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:20288:10
+      |
+20288 | pub type ngx_event_pipe_input_filter_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxEventPipeInputFilterPt`
+
+warning: type `ngx_event_pipe_output_filter_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:20291:10
+      |
+20291 | pub type ngx_event_pipe_output_filter_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxEventPipeOutputFilterPt`
+
+warning: type `ngx_http_upstream_srv_conf_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:21070:10
+      |
+21070 | pub type ngx_http_upstream_srv_conf_t = ngx_http_upstream_srv_conf_s;
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpUpstreamSrvConfT`
+
+warning: type `ngx_http_upstream_init_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:21071:10
+      |
+21071 | pub type ngx_http_upstream_init_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpUpstreamInitPt`
+
+warning: type `ngx_http_upstream_init_peer_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:21074:10
+      |
+21074 | pub type ngx_http_upstream_init_peer_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpUpstreamInitPeerPt`
+
+warning: type `ngx_http_upstream_handler_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:22942:10
+      |
+22942 | pub type ngx_http_upstream_handler_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpUpstreamHandlerPt`
+
+warning: type `ngx_http_upstream_rr_peer_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:23755:10
+      |
+23755 | pub type ngx_http_upstream_rr_peer_t = ngx_http_upstream_rr_peer_s;
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpUpstreamRrPeerT`
+
+warning: type `ngx_http_upstream_rr_peers_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:24023:10
+      |
+24023 | pub type ngx_http_upstream_rr_peers_t = ngx_http_upstream_rr_peers_s;
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpUpstreamRrPeersT`
+
+warning: type `ngx_http_location_tree_node_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:24305:10
+      |
+24305 | pub type ngx_http_location_tree_node_t = ngx_http_location_tree_node_s;
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpLocationTreeNodeT`
+
+warning: type `ngx_http_core_loc_conf_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:24306:10
+      |
+24306 | pub type ngx_http_core_loc_conf_t = ngx_http_core_loc_conf_s;
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpCoreLocConfT`
+
+warning: type `ngx_http_phases` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:24637:10
+      |
+24637 | pub type ngx_http_phases = ::std::os::raw::c_uint;
+      |          ^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpPhases`
+
+warning: type `ngx_http_phase_handler_t` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:24638:10
+      |
+24638 | pub type ngx_http_phase_handler_t = ngx_http_phase_handler_s;
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpPhaseHandlerT`
+
+warning: type `ngx_http_phase_handler_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:24639:10
+      |
+24639 | pub type ngx_http_phase_handler_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpPhaseHandlerPt`
+
+warning: type `ngx_http_output_header_filter_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:27310:10
+      |
+27310 | pub type ngx_http_output_header_filter_pt =
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpOutputHeaderFilterPt`
+
+warning: type `ngx_http_output_body_filter_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:27312:10
+      |
+27312 | pub type ngx_http_output_body_filter_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpOutputBodyFilterPt`
+
+warning: type `ngx_http_request_body_filter_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:27315:10
+      |
+27315 | pub type ngx_http_request_body_filter_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpRequestBodyFilterPt`
+
+warning: type `ngx_http_ssi_command_pt` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:29303:10
+      |
+29303 | pub type ngx_http_ssi_command_pt = ::std::option::Option<
+      |          ^^^^^^^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `NgxHttpSsiCommandPt`
+
+warning: type `__builtin_va_list` should have an upper camel case name
+     --> /home/nate/projects/github.com/natemara/refactoring-to-rust/target/debug/build/chapter-04-listing-10-0016862ed9c87752/out/nginx.rs:29889:10
+      |
+29889 | pub type __builtin_va_list = [__va_list_tag; 1usize];
+      |          ^^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `BuiltinVaList`
+
+error: aborting due to previous error; 173 warnings emitted
+
+For more information about this error, try `rustc --explain E0433`.
+error: could not compile `chapter-04-listing-10`.
+
+To learn more, run the command again with --verbose.
