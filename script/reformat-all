@@ -1,4 +1,4 @@
 #!/bin/bash
 
-fd cargo.toml code -x cargo fmt --manifest-path {}
-fd -e java -e c . code -x clang-format -i {}
+cargo fmt
+fd -e java -e c . -x clang-format -i {}
