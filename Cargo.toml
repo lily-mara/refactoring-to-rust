@@ -54,4 +54,8 @@ members = [
     "chapter-04/listing_14_calculate",
     "chapter-04/listing_15_evaluate_expression",
     "chapter-04/listing_16_full_handler",
+
+    "chapter-05/listing_01_nginx_sys",
+    "chapter-05/listing_02_handler",
+    "chapter-05/listing_03_foo",
 ]
