@@ -6,6 +6,7 @@ fn main() {
     .whitelist_type("ngx_.*")
     .whitelist_function("ngx_.*")
     .whitelist_var("ngx_.*")
+    .whitelist_var("NGX_.*")
     .clang_args(vec![
       format!("-I{}/src/core", nginx_dir),
       format!("-I{}/src/event", nginx_dir),
