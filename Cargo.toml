@@ -61,4 +61,7 @@ members = [
     "chapter-05/listing_04_nginx",
 #   "chapter-05/listing_05_stringparser_NO_COMPILE",
     "chapter-05/listing_06_stringparser",
+    "chapter-05/listing_07_nginx_easy_body",
+    "chapter-05/listing_08_already_seen_bodies",
+#   "chapter-05/listing_09_already_seen_bodies_with_lifetimes_NO_COMPILE",
 ]
