@@ -64,4 +64,10 @@ members = [
     "chapter-05/listing_07_nginx_easy_body",
     "chapter-05/listing_08_already_seen_bodies",
 #   "chapter-05/listing_09_already_seen_bodies_with_lifetimes_NO_COMPILE",
+    "chapter-05/listing_10_already_seen_bodies_with_strings",
+    "chapter-05/listing_11_unsafe_pointer_wrapper",
+    "chapter-05/listing_12_unsafe_pointer_wrapper_typecast",
+    "chapter-05/listing_13_print_wrapper",
+    "chapter-05/listing_14_print_wrapper_macro",
+    "chapter-05/listing_15_identity_macro",
 ]

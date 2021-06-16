@@ -1,10 +1,7 @@
 use http::{Request, Response, StatusCode};
-use nginx::{handlers, RequestBody};
+use nginx::{handler, RequestBody};
 
-handlers! {
-  ngx_http_calculator_handler;
-  "/calculate" => calculator,
-}
+handler!(ngx_http_calculator_handler, calculator);
 
 fn calculator<'a>(request: Request<RequestBody<'a>>) -> Response<String> {
   let request_body = match request.body().as_str() {

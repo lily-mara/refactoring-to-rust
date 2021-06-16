@@ -1,10 +1,7 @@
 use http::{Request, Response, StatusCode};
-use nginx::{handlers, RequestBody};
+use nginx::{handler, RequestBody};
 
-handlers! {
-  ngx_http_unique_handler;
-  "/unique" => is_request_unique,
-}
+handler!(ngx_http_unique_handler, is_request_unique);
 
 static mut ALREADY_SEEN_BODIES: Vec<RequestBody<'static>> = Vec::new();
 

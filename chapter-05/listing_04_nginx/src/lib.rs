@@ -6,13 +6,16 @@ use nginx_sys::{
 };
 
 #[macro_export]
-macro_rules! handlers {
-  { $name:ident; $($path:expr => $fn_name:ident,)* } => {
+macro_rules! handler {
+  ($c_fn_name:ident, $rs_fn_name:ident) => {
     #[no_mangle]
-    pub unsafe extern "C" fn $name(
+    pub unsafe extern "C" fn $c_fn_name(
       r: *mut nginx_sys::ngx_http_request_t,
     ) -> nginx_sys::ngx_int_t {
-      let rc = nginx_sys::ngx_http_read_client_request_body(r, Some(read_body_handler));
+      let rc = nginx_sys::ngx_http_read_client_request_body(
+        r,
+        Some(read_body_handler),
+      );
       if rc != 0 {
         return rc;
       }
@@ -20,7 +23,9 @@ macro_rules! handlers {
       0
     }
 
-    unsafe extern "C" fn read_body_handler(r: *mut nginx_sys::ngx_http_request_t) {
+    unsafe extern "C" fn read_body_handler(
+      r: *mut nginx_sys::ngx_http_request_t,
+    ) {
       let request = match std::ptr::NonNull::new(r) {
         Some(request) => request,
         None => {
@@ -63,19 +68,13 @@ macro_rules! handlers {
         .body(request_body)
         .unwrap();
 
-      let response = match uri {
-        $(x if x == $path => $fn_name(request),)*
-        _ => http::Response::builder()
-          .status(http::StatusCode::NOT_FOUND)
-          .body(format!("Path {} not found", uri))
-          .unwrap(),
-      };
+      let response = $rs_fn_name(request);
 
       if let Err(e) = $crate::write_response(r, response) {
         eprintln!("Failed to write NGINX response object: {}", e);
       }
     }
-  }
+  };
 }
 
 pub struct RequestBody<'a> {
@@ -85,15 +84,10 @@ pub struct RequestBody<'a> {
 
 impl<'a> std::fmt::Debug for RequestBody<'a> {
   fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-    if let Ok(s) = self.as_str() {
-      return write!(f, "{:?}", s);
+    match self.as_str() {
+      Ok(s) => write!(f, "{:?}", s),
+      Err(e) => write!(f, "<invalid request body: {}>", e),
     }
-
-    if let Ok(b) = self.as_bytes() {
-      return write!(f, "{:?}", b);
-    }
-
-    write!(f, "<invalid request body>")
   }
 }
 
@@ -118,29 +112,27 @@ impl<'a> RequestBody<'a> {
   }
 
   pub fn as_str(&self) -> Result<&'a str, &'static str> {
-    let body_str = std::str::from_utf8(self.as_bytes()?)
-      .map_err(|_| "Body contains invalid UTF-8")?;
-
-    Ok(body_str)
-  }
-
-  pub fn as_bytes(&self) -> Result<&'a [u8], &'static str> {
     unsafe {
-      if self.request.as_ref().request_body.is_null()
-        || (*self.request.as_ref().request_body).bufs.is_null()
-        || (*(*self.request.as_ref().request_body).bufs).buf.is_null()
+      let request = self.request.as_ref();
+
+      if request.request_body.is_null()
+        || (*request.request_body).bufs.is_null()
+        || (*(*request.request_body).bufs).buf.is_null()
       {
         return Err("Request body buffers were not initialized as expected");
       }
 
-      let buf = (*(*self.request.as_ref().request_body).bufs).buf;
+      let buf = (*(*request.request_body).bufs).buf;
 
       let start = (*buf).pos;
       let len = (*buf).last.offset_from(start) as usize;
 
       let body_bytes = std::slice::from_raw_parts(start, len);
 
-      Ok(body_bytes)
+      let body_str = std::str::from_utf8(body_bytes)
+        .map_err(|_| "Body contains invalid UTF-8")?;
+
+      Ok(body_str)
     }
   }
 }

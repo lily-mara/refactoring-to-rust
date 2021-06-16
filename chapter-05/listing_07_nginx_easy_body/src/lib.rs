@@ -6,13 +6,16 @@ use nginx_sys::{
 };
 
 #[macro_export]
-macro_rules! handlers {
-  { $name:ident; $($path:expr => $fn_name:ident,)* } => {
+macro_rules! handler {
+  ($c_fn_name:ident, $rs_fn_name:ident) => {
     #[no_mangle]
-    pub unsafe extern "C" fn $name(
+    pub unsafe extern "C" fn $c_fn_name(
       r: *mut nginx_sys::ngx_http_request_t,
     ) -> nginx_sys::ngx_int_t {
-      let rc = nginx_sys::ngx_http_read_client_request_body(r, Some(read_body_handler));
+      let rc = nginx_sys::ngx_http_read_client_request_body(
+        r,
+        Some(read_body_handler),
+      );
       if rc != 0 {
         return rc;
       }
@@ -20,7 +23,9 @@ macro_rules! handlers {
       0
     }
 
-    unsafe extern "C" fn read_body_handler(r: *mut nginx_sys::ngx_http_request_t) {
+    unsafe extern "C" fn read_body_handler(
+      r: *mut nginx_sys::ngx_http_request_t,
+    ) {
       let request = match std::ptr::NonNull::new(r) {
         Some(request) => request,
         None => {
@@ -63,19 +68,13 @@ macro_rules! handlers {
         .body(request_body)
         .unwrap();
 
-      let response = match uri {
-        $(x if x == $path => $fn_name(request),)*
-        _ => http::Response::builder()
-          .status(http::StatusCode::NOT_FOUND)
-          .body(format!("Path {} not found", uri))
-          .unwrap(),
-      };
+      let response = $rs_fn_name(request);
 
       if let Err(e) = $crate::write_response(r, response) {
         eprintln!("Failed to write NGINX response object: {}", e);
       }
     }
-  }
+  };
 }
 
 pub struct EasyRequestBody {

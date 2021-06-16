@@ -1,26 +1,27 @@
 use http::{Request, Response, StatusCode};
-use nginx::{handler, EasyRequestBody};
+use nginx::{handler, RequestBody};
 
 handler!(ngx_http_unique_handler, is_request_unique);
 
-static mut ALREADY_SEEN_BODIES: Vec<EasyRequestBody> = Vec::new(); // <1>
+static mut ALREADY_SEEN_BODIES: Vec<String> = Vec::new();
 
-fn is_request_unique(request: Request<EasyRequestBody>) -> Response<String> {
+fn is_request_unique<'a>(
+  request: Request<RequestBody<'a>>,
+) -> Response<String> {
   let request_body = request.into_body();
   let body_str = request_body.as_str().unwrap();
 
   let mut already_seen = false;
 
   for body in unsafe { &ALREADY_SEEN_BODIES } {
-    let other_body_str = body.as_str().unwrap(); // <2>
-    if body_str == other_body_str {
+    if body_str == body {
       already_seen = true;
       break;
     }
   }
 
   unsafe {
-    ALREADY_SEEN_BODIES.push(request_body); // <3>
+    ALREADY_SEEN_BODIES.push(body_str.to_string());
   }
 
   Response::builder()
