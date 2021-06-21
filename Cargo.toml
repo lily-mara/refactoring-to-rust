@@ -70,4 +70,5 @@ members = [
     "chapter-05/listing_13_print_wrapper",
     "chapter-05/listing_14_print_wrapper_macro",
     "chapter-05/listing_15_identity_macro",
+    "chapter-05/listing_16_simple_print_wrap",
 ]
