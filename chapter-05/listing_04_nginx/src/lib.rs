@@ -36,37 +36,7 @@ macro_rules! handler {
 
       let request_body = $crate::RequestBody::new(request);
 
-      let uri = match $crate::ngx_str_to_str(&request.as_ref().uri) {
-        Some(uri) => uri,
-        None => {
-          eprintln!("Found invalid URI");
-          return;
-        }
-      };
-
-      use http::method::Method;
-
-      let method = match request.as_ref().method as u32 {
-        nginx_sys::NGX_HTTP_GET => Method::GET,
-        nginx_sys::NGX_HTTP_POST => Method::POST,
-        nginx_sys::NGX_HTTP_PUT => Method::PUT,
-        nginx_sys::NGX_HTTP_DELETE => Method::DELETE,
-        nginx_sys::NGX_HTTP_HEAD => Method::HEAD,
-        nginx_sys::NGX_HTTP_OPTIONS => Method::OPTIONS,
-        nginx_sys::NGX_HTTP_PATCH => Method::PATCH,
-        nginx_sys::NGX_HTTP_TRACE => Method::TRACE,
-        x => {
-          eprintln!("Got unknown method type: {}", x);
-
-          Method::GET
-        }
-      };
-
-      let request = http::Request::builder()
-        .uri(uri)
-        .method(method)
-        .body(request_body)
-        .unwrap();
+      let request = http::Request::builder().body(request_body).unwrap();
 
       let response = $rs_fn_name(request);
 
@@ -88,18 +58,6 @@ impl<'a> std::fmt::Debug for RequestBody<'a> {
       Ok(s) => write!(f, "{:?}", s),
       Err(e) => write!(f, "<invalid request body: {}>", e),
     }
-  }
-}
-
-pub fn ngx_str_to_str(s: &ngx_str_t) -> Option<&str> {
-  if s.data.is_null() {
-    return None;
-  }
-
-  unsafe {
-    let bytes = std::slice::from_raw_parts(s.data, s.len as usize);
-
-    std::str::from_utf8(bytes).ok()
   }
 }
 

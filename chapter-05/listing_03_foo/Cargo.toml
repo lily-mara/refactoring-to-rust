@@ -11,6 +11,5 @@ crate-type = ["cdylib"]
 
 [dependencies]
 http = "0.2"
-nginx-sys = { path = "../listing_01_nginx_sys", package = "chapter-05-listing-01" }
-nginx = { path = "../listing_04_nginx", package = "chapter-05-listing-04" }
+nginx = { path = "../listing_20_minimum_handler_reexport", package = "chapter-05-listing-20" }
 calculate = { path = "../../chapter-04/listing_14_calculate", package = "chapter-04-listing-14" }

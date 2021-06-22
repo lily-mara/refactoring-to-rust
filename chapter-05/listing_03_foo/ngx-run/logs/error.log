@@ -1,1 +1,2 @@
 2021/03/02 20:57:37 [emerg] 791#0: open() ".ngx-run/nginx.conf" failed (2: No such file or directory)
+2021/06/21 22:14:30 [emerg] 3026#0: dlopen() "ngx-run/../nginx-1.19.3/objs/ngx_http_calculator.so" failed (ngx-run/../nginx-1.19.3/objs/ngx_http_calculator.so: undefined symbol: ngx_http_calculator_handler) in ngx-run/nginx.conf:1
