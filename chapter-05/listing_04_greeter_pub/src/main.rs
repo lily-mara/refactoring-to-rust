@@ -1,5 +1,5 @@
-use crate::input::get_name;
-use crate::output::{goodbye, hello};
+use input::get_name;
+use output::{goodbye, hello};
 
 fn main() {
   let name = get_name();

@@ -1,6 +1,7 @@
 use input::get_name;
 use output::{goodbye, hello};
 
+mod day_kind;
 mod input;
 mod output;
 

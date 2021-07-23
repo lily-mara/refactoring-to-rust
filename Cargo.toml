@@ -60,4 +60,9 @@ members = [
     "chapter-05/listing_03_greeter_use",
     "chapter-05/listing_04_greeter_pub",
     "chapter-05/listing_05_greeter_mod_files",
+    "chapter-05/listing_06_day_kind",
+    "chapter-05/listing_07_paths",
+    "chapter-05/listing_08_multi_crate_pathing/libsnack",
+    "chapter-05/listing_08_multi_crate_pathing/snack",
+    "chapter-05/listing_88",
 ]
