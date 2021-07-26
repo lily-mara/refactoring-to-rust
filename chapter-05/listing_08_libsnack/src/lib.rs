@@ -5,6 +5,8 @@ pub mod treats {
     Candy,
     IceCream,
   }
-}
 
-pub fn eat(treat: treats::Treat) {}
+  pub struct ConsumedTreat {
+    treat: Treat,
+  }
+}

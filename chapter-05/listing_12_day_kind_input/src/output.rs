@@ -1,4 +1,4 @@
-use day_kind::DayKind;
+use crate::day_kind::DayKind;
 
 pub fn print_day_kind_message(day_kind: DayKind) {
   match day_kind {
