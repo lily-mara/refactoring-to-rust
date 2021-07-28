@@ -66,7 +66,9 @@ members = [
     "chapter-05/listing_09_libsnack_lifecycle_absolute",
     "chapter-05/listing_10_libsnack_lifecycle_relative",
     "chapter-05/listing_11_libsnack_lifecycle_use",
-    "chapter-05/listing_12_day_kind_input",
-    "chapter-05/listing_13_day_kind_main",
+    "chapter-05/listing_12_greeter_day_kind_input",
+    "chapter-05/listing_13_greeter_day_kind_main",
+    "chapter-05/listing_14_greeter_day_kind_read_line",
+    "chapter-05/listing_15_greeter_pub_use",
     "chapter-05/listing_88",
 ]
