@@ -70,5 +70,4 @@ members = [
     "chapter-05/listing_17_greeter_day_kind_main",
     "chapter-05/listing_18_greeter_day_kind_read_line",
     "chapter-05/listing_19_greeter_pub_use",
-    "chapter-05/listing_88",
 ]
