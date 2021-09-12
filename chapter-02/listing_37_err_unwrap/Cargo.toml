@@ -1,7 +1,7 @@
 [package]
 name = "chapter-02-listing-37"
 version = "0.1.0"
-authors = ["Nate Mara <natemara@fastmail.com>"]
+authors = ["Lily Mara <lilymara@fastmail.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

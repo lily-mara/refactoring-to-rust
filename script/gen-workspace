@@ -11,7 +11,7 @@ members = [""", file=f)
 
     chapter = 'chapter-01'
 
-    for path in sorted(list(glob.glob('chapter-*/**/Cargo.toml'))):
+    for path in sorted(list(glob.glob('chapter-*/**/Cargo.toml', recursive=True))):
         new_chapter = path.split('/')[0]
         if new_chapter != chapter:
             print('', file=f)
@@ -29,6 +29,9 @@ members = [""", file=f)
     print(']', file=f)
 
 
+# Note: do not add `recursive=True` to this glob call because we only want to
+# rewrite the crate names for listing crates that have one level of nesting. If
+# they have more than this they must write their own crate names
 for path in glob.glob('chapter-*/**/Cargo.toml'):
     chapter = None
     listing = None
