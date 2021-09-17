@@ -2,8 +2,8 @@ use pyo3::{exceptions::PyValueError, prelude::*};
 use serde::Deserialize;
 
 #[derive(Deserialize)]
-struct Data<'a> {
-  name: &'a str,
+struct Data {
+  name: String,
   value: u16,
 }
 
