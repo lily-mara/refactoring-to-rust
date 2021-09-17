@@ -2,6 +2,9 @@
 
 import os.path
 import glob
+import sys
+
+os.chdir(os.path.dirname(os.path.dirname(__file__)))
 
 with open('Cargo.toml', 'w') as f:
     print("""# Auto generated with `./script/gen-workspace`
@@ -46,6 +49,9 @@ for path in glob.glob('chapter-*/**/Cargo.toml'):
         continue
 
     listing_parts = listing.split('_')
+    if len(listing_parts) < 2:
+        print(f'Listing directory {chapter}/{listing} does not match expected format')
+        sys.exit(1)
 
     name_line = f'name = "{chapter}-{listing_parts[0]}-{listing_parts[1]}"\n'
 
