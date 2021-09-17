@@ -1,0 +1,14 @@
+[package]
+name = "chapter-06-listing-01"
+version = "0.1.0"
+edition = "2018"
+
+[[bench]]
+name = "chapter-06-listing-01"
+harness = false
+path = "benches/bench.rs"
+
+[dev-dependencies]
+criterion = "0.3"
+pyo3 = "0.14"
+rand = "0.8"

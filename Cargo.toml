@@ -75,4 +75,7 @@ members = [
     "chapter-05/listing_29_forest_pub_crate",
     "chapter-05/listing_30_nested_parent_visibility",
 #   "chapter-05/listing_31_nested_downward_visibility_doesnt_work_NO_COMPILE",
+
+    "chapter-06/listing_00_complete",
+    "chapter-06/listing_01_benching",
 ]
