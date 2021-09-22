@@ -55,11 +55,14 @@ for path in glob.glob('chapter-*/**/Cargo.toml'):
 
     name_line = f'name = "{chapter}-{listing_parts[0]}-{listing_parts[1]}"\n'
 
+    seen_name_line = False
+
     new_contents = ''
     with open(path) as f:
         line = f.readline()
         while line:
-            if line.startswith('name ='):
+            if line.startswith('name =') and not seen_name_line:
+                seen_name_line = True
                 new_contents += name_line
             else:
                 new_contents += line
