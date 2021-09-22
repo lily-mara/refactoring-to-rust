@@ -74,6 +74,12 @@ for line in INPUT.splitlines():
       b,
     )
   });
+
+  drop(group);
+
+  c.bench_function("python-raw", |b| {
+    bench_py(&input, &["json"], "1 + 1", b)
+  });
 }
 
 criterion_group!(
