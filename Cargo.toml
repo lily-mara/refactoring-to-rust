@@ -78,4 +78,5 @@ members = [
 
     "chapter-06/listing_00_complete",
     "chapter-06/listing_01_benching",
+#   "chapter-06/listing_03_rust_psuedocode_NO_COMPILE",
 ]
