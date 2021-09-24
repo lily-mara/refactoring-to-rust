@@ -79,4 +79,7 @@ members = [
     "chapter-06/listing_00_complete",
     "chapter-06/listing_01_benching",
 #   "chapter-06/listing_03_rust_psuedocode_NO_COMPILE",
+#   "chapter-06/listing_04_json_parser_first_pass_NO_COMPILE",
+    "chapter-06/listing_05_json_parser_working",
+    "chapter-06/listing_06_json_parser_wrong_types",
 ]
