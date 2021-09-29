@@ -1,0 +1,9 @@
+#!/bin/bash
+
+virtualenv rust-json
+
+source rust-json/bin/activate
+
+maturin develop
+
+python

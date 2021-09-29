@@ -82,4 +82,8 @@ members = [
 #   "chapter-06/listing_04_json_parser_first_pass_NO_COMPILE",
     "chapter-06/listing_05_json_parser_working",
     "chapter-06/listing_06_json_parser_wrong_types",
+    "chapter-06/listing_07_json_summer_rust",
+    "chapter-06/listing_08_rust_json_lib",
+    "chapter-06/listing_09_rust_json_empty_pymodule",
+    "chapter-06/listing_10_rust_json_wrapped_pyfunction",
 ]
