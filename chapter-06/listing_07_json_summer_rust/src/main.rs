@@ -5,7 +5,7 @@ struct Data {
 }
 
 fn main() {
-  let result = sum("{ \"name\": \"zl594EB\", \"value\": 63836 }");
+  let result = sum("{ \"name\": \"Sharpe Oliver\", \"value\": 134087 }");
 
   println!("{}", result);
 }

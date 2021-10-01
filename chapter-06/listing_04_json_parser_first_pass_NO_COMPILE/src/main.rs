@@ -4,7 +4,7 @@ struct Data {
 }
 
 fn main() {
-  let input = "{ \"name\": \"zl594EB\", \"value\": 63836 }";
+  let input = "{ \"name\": \"Sharpe Oliver\", \"value\": 134087 }";
 
   let parsed = serde_json::from_str(input).unwrap();
 
