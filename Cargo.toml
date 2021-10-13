@@ -86,4 +86,6 @@ members = [
     "chapter-06/listing_08_rust_json_lib",
     "chapter-06/listing_09_rust_json_empty_pymodule",
     "chapter-06/listing_10_rust_json_wrapped_pyfunction",
+#   "chapter-06/listing_12_dev_dependencies_NO_COMPILE",
+    "chapter-06/listing_13_bench_base",
 ]

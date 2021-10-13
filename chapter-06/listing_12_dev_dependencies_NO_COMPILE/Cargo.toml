@@ -1,0 +1,14 @@
+[package]
+name = "chapter-06-listing-12"
+version = "0.1.0"
+edition = "2018"
+
+[[bench]]
+name = "py-vs-rust"
+harness = false
+
+[dependencies]
+
+[dev-dependencies]
+criterion = { version = "0.3.5", features = ["html_reports"] }
+pyo3 = { version = "0.14", features = ["auto-initialize"] }

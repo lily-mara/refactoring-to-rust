@@ -4,9 +4,8 @@ version = "0.1.0"
 edition = "2018"
 
 [[bench]]
-name = "chapter-06-listing-01"
+name = "py-vs-rust"
 harness = false
-path = "benches/bench.rs"
 
 [dev-dependencies]
 criterion = "0.3"
