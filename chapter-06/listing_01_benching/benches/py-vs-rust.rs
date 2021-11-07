@@ -44,7 +44,7 @@ fn json_input(count: u64) -> String {
 }
 
 fn json_group(c: &mut Criterion) {
-  let count = 1_000;
+  let count = 1;
 
   let input = json_input(count);
 
@@ -67,10 +67,10 @@ for line in INPUT.splitlines():
   group.bench_function("PyO3-serde-json", |b| {
     bench_py(
       &input,
-      &["json_summer"],
+      &["rust_json"],
       "s = 0
 for line in INPUT.splitlines():
-  s += json_summer.sum_json(line)",
+  s += rust_json.sum(line)",
       b,
     )
   });
