@@ -1,7 +1,5 @@
 # Code from for Refactoring to Rust
 
-[![Refactoring to Rust Banner](/images/DOTD_NewMEAP_Mara.png)][buy_book]
-
 [Get the book Here!][buy_book]
 
 This repository contains all of the code listings from the new book,
