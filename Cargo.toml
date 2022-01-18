@@ -89,4 +89,17 @@ members = [
 #   "chapter-06/listing_12_dev_dependencies_NO_COMPILE",
     "chapter-06/listing_13_bench_base",
     "chapter-06/listing_14_bench_rust_sum",
+
+    "chapter-07/listing_01_testing",
+    "chapter-07/listing_02_failing_test",
+    "chapter-07/listing_03_stdout",
+    "chapter-07/listing_04_add_fn",
+    "chapter-07/listing_05_add_fn_doc",
+    "chapter-07/listing_06_add_fn_doctest",
+    "chapter-07/listing_07_add_fn_passing_doctest",
+    "chapter-07/listing_08_rust_json_reminder",
+    "chapter-07/listing_09_rust_json_tests",
+    "chapter-07/listing_10_rust_json_raw_string",
+    "chapter-07/listing_11_more_rust_tests",
+    "chapter-07/listing_18_add_bug_to_rust",
 ]
