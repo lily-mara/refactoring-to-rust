@@ -102,4 +102,6 @@ members = [
     "chapter-07/listing_10_rust_json_raw_string",
     "chapter-07/listing_11_more_rust_tests",
     "chapter-07/listing_18_add_bug_to_rust",
+
+    "chapter-08/listing_00_final",
 ]
