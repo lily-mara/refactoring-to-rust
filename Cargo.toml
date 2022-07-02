@@ -104,4 +104,5 @@ members = [
     "chapter-07/listing_18_add_bug_to_rust",
 
     "chapter-08/listing_00_final",
+    "chapter-08/listing_01_mandelbrot",
 ]
