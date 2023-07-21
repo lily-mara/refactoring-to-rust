@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Feed example</title>
+  </head>
+  <body>
+    <div id="listContainer">
+      <ul id="list"></ul>
+    </div>
+    <script type="module">
+      import init, { paper_search } from "./pkg/papers.js";
+      init().then(() => {
+        var list = document.getElementById('list');
+        paper_search({"term":"type", "page": 0, "limit": 10}).then(
+          (result)=>{
+            console.log(result)
+            result.entry.forEach((r)=> {
+
+              var a = document.createElement('a');
+              a.target = '_blank';
+              a.href = r.id;
+              a.innerText = r.title;
+              var li = document.createElement('li')
+              li.appendChild(a)
+              list.appendChild(li)
+            })
+          },
+          (error)=>console.error(error))
+      });
+    </script>
+  </body>
+</html>
