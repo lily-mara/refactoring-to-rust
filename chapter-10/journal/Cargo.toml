@@ -1,0 +1,8 @@
+[workspace]
+
+members = [
+    "paper_search",
+    "paper_search_lib",
+    "book_search"
+]
+exclude = ["journal_cli"]

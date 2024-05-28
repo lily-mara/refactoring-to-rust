@@ -1,0 +1,29 @@
+use std::error::Error;
+use std::fmt::{self, Debug, Display, Formatter};
+
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let res: Vec<String> = search("rust".to_string(), 0, 10).unwrap();
+    for entry in res.iter() {
+        println!("{:?}", entry);
+    }    
+    Ok(())
+}
+
+pub fn search(
+    term: String,
+    page: isize,
+    max_results: isize,
+) -> Result<Vec<String>, Box<dyn std::error::Error>> {
+    let rt = tokio::runtime::Builder::new_current_thread()
+        .enable_all()
+        .build()
+        .unwrap();
+    let feed: paper_search_lib::Feed = rt.block_on(async {paper_search_lib::search(term, page, max_results) 
+        .await}).unwrap();
+    let res = feed
+        .entry
+        .into_iter()
+        .map(|e| format!("{} {}", e.title, e.id))
+        .collect::<Vec<String>>();
+    return Ok::<Vec<String>, Box<dyn std::error::Error>>(res);
+}

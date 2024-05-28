@@ -1,0 +1,16 @@
+[package]
+name = "book_search"
+version = "0.1.0"
+edition = "2021"
+
+[build]
+target="wasm32-wasi"
+
+[target.wasm32-wasi]
+runner = "wasmedge"
+
+[dependencies]
+tokio_wasi = { version = "1.21", features = ["rt", "macros", "net", "time"]}
+reqwest_wasi = "0.11"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"

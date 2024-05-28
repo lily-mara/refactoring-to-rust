@@ -1,0 +1,30 @@
+use std::env;
+use std::path::PathBuf;
+use wasmedge_sdk::{
+    config::{CommonConfigOptions, ConfigBuilder, HostRegistrationConfigOptions},
+    params, VmBuilder, WasmVal
+};
+
+fn main() -> Result<(), Box<dyn std::error::Error>>{
+    let mut args: Vec<String> = env::args().skip(1).collect();
+    args.reverse();
+    let target = args.pop().unwrap_or("paper_search".to_string());
+    let filename = format!("{}.wasm", target);
+    let wasm_file: PathBuf = ["..", "target", "wasm32-wasi", "debug", filename.as_str()].iter().collect();
+    //Create a config with the `wasi` option enabled
+    let config = ConfigBuilder::new(CommonConfigOptions::default())
+        .with_host_registration_config(HostRegistrationConfigOptions::default().wasi(true))
+        .build()?; 
+    assert!(config.wasi_enabled());
+
+    // create a VM with the config
+    let mut vm = VmBuilder::new().with_config(config).build()?; 
+
+    vm.wasi_module_mut()
+        .expect("Not found wasi module")
+        .initialize(None, None, None);
+    vm.register_module_from_file(target.as_str(), &wasm_file)?
+        .run_func(Some(target.as_str()), "_start", params!())?;
+
+    Ok(())
+}

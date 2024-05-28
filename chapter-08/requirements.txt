@@ -1,0 +1,3 @@
+mandelbrot @ file:///var/folders/fn/8gbv4zs92lqc4zlftc11f2zw0000gn/T/.tmpOWxfjD/mandelbrot-0.1.0-cp38-abi3-macosx_11_0_arm64.whl#sha256=cb627ff6e1d00bfe20365e42f5cf56f29468c02b76977f42b26ccbda50c7a5b4
+maturin==1.4.0
+pillow==10.2.0

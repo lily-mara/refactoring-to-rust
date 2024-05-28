@@ -1,0 +1,14 @@
+[package]
+name = "paper_search"
+version = "0.1.0"
+edition = "2021"
+
+[build]
+target="wasm32-wasi"
+
+[target.wasm32-wasi]
+runner = "wasmedge"
+
+[dependencies]
+tokio_wasi = { version = "1.21", features = ["rt", "macros", "net", "time"]}
+paper_search_lib = { path = "../paper_search_lib" } 
